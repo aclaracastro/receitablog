@@ -1,0 +1,104 @@
+.header {
+  background-color: #86533b; 
+  color: #fff;
+  padding: 15px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.headerNav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Para quebrar linha em telas pequenas */
+  justify-content: center;
+  gap: 20px;
+}
+
+.headerNavLink {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.headerNavLink:hover {
+  color: #ccc;
+}
+
+/* Estilos para o Footer */
+.footer {
+  background-color: #333; /* Um cinza escuro para o footer */
+  color: #f0f0f0; /* Texto quase branco */
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 40px; /* Espaço acima do footer para separar do conteúdo */
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column; /* Empilha em mobile */
+  align-items: center;
+  gap: 15px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footerLinks a,
+.socialLinks a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 0.9em;
+  transition: color 0.3s ease;
+}
+
+.footerLinks a:hover,
+.socialLinks a:hover {
+  color: #ccc;
+}
+
+.socialLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.copyright {
+  margin: 10px 0 0 0;
+  font-size: 0.85em;
+}
+
+/* Media Queries para Responsividade do Footer */
+@media (min-width: 768px) {
+  .footerContent {
+    flex-direction: row; /* Alinha os itens em linha em telas maiores */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    align-items: flex-start; /* Alinha no topo */
+  }
+
+  .footerLinks {
+    flex-direction: column; /* Links em coluna em telas maiores */
+    align-items: flex-start;
+  }
+
+  .socialLinks {
+    flex-direction: row; /* Mantém em linha */
+    align-items: flex-start;
+  }
+
+  .copyright {
+    margin: 0; /* Remove margem extra */
+    text-align: left;
+  }
+}
